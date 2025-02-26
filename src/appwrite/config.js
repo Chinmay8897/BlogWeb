@@ -85,7 +85,7 @@ export class Service{
         try {
             return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
-                conf.appwriteBucketId,
+                conf.appwriteCollectionId,
                 queries,
 
 
