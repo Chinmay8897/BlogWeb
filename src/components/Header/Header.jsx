@@ -25,12 +25,12 @@ function Header(){
         active:!authStatus,
 },
         {
-            name:'All Posts',
+            name:'Crimes',
             slug:"/all-posts",
             active:authStatus,
     },
         {
-            name:'Add Post',
+            name:'Add Crime',
             slug:"/add-post",
             active:authStatus
     },

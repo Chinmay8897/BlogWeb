@@ -74,8 +74,8 @@ export default function PostForm({ post }) {
         <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
             <div className="w-2/3 px-2">
                 <Input
-                    label="Title :"
-                    placeholder="Title"
+                    label="Crime Type :"
+                    placeholder="Robbery/Murder/Kidnap..."
                     className="mb-4"
                     {...register("title", { required: true })}
                 />
@@ -88,11 +88,11 @@ export default function PostForm({ post }) {
                         setValue("slug", slugTransform(e.currentTarget.value), { shouldValidate: true });
                     }}
                 />
-                <RTE label="Content :" name="content" control={control} defaultValue={getValues("content")} />
+                <RTE label="Crime Description and Location :" name="content" control={control} defaultValue={getValues("content")} />
             </div>
             <div className="w-1/3 px-2">
                 <Input
-                    label="Featured Image :"
+                    label="Crime Image :"
                     type="file"
                     className="mb-4"
                     accept="image/png, image/jpg, image/jpeg, image/gif"
